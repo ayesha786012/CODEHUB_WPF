@@ -15,3 +15,23 @@ Bajracharya S, Ngo T, Linstead E, Rigor P, Dou Y, Baldi P, Lopes C (2006) Source
 Bajracharya SK, Ossher J, Lopes CV (2010) Leveraging usages similarity for effective retrieval of examples in code repositories.In: Proceedings of the eighteenth ACM SIGSOFT international symposium on Foundations of software engineering, pp 157–166 
 Binkley D, Lawrie D (2014) Learning to rank improves ir in se. In: Proceedings of 2014 IEEE International Conference on Software Maintenance and Evolution BrandtJ,GuoP,LewensteinJ,DontchevaM,KlemmerS(2009
 
+
+                                             PROJECT_PREVIEW
+![about](https://user-images.githubusercontent.com/59975636/84320640-6f0abd00-ab8b-11ea-8919-3ba292716799.PNG)
+![admin](https://user-images.githubusercontent.com/59975636/84320648-729e4400-ab8b-11ea-8fe2-e52e99002371.PNG)
+![adminpanel](https://user-images.githubusercontent.com/59975636/84320653-7336da80-ab8b-11ea-80f6-0bfe7dac0436.PNG)
+![crawlingpic](https://user-images.githubusercontent.com/59975636/84320654-73cf7100-ab8b-11ea-8ee1-f7fe7a8a7dbe.PNG)
+![customer](https://user-images.githubusercontent.com/59975636/84320656-75009e00-ab8b-11ea-9146-3600c1c0555a.PNG)
+![filterpic](https://user-images.githubusercontent.com/59975636/84320657-75993480-ab8b-11ea-973d-a0dbf0485e65.PNG)
+![grid](https://user-images.githubusercontent.com/59975636/84320660-76ca6180-ab8b-11ea-8571-324690785274.PNG)
+![history](https://user-images.githubusercontent.com/59975636/84320661-7762f800-ab8b-11ea-897e-7a746be285e5.PNG)
+![mainfalte](https://user-images.githubusercontent.com/59975636/84320662-77fb8e80-ab8b-11ea-96ef-6635de5fd5f0.PNG)
+![performance](https://user-images.githubusercontent.com/59975636/84320663-792cbb80-ab8b-11ea-9068-da7700ac843a.PNG)
+![queryfoarm](https://user-images.githubusercontent.com/59975636/84320667-7a5de880-ab8b-11ea-9430-f6de6c573c4d.PNG)
+![queryrepotpic](https://user-images.githubusercontent.com/59975636/84320672-7af67f00-ab8b-11ea-9ca1-522e8cf45b57.PNG)
+![rankigpic](https://user-images.githubusercontent.com/59975636/84320673-7c27ac00-ab8b-11ea-95db-60ba742def22.PNG)
+![rating](https://user-images.githubusercontent.com/59975636/84320677-7d58d900-ab8b-11ea-9253-ba783c2080e9.PNG)
+![recommendationpic](https://user-images.githubusercontent.com/59975636/84320682-7e8a0600-ab8b-11ea-9f63-19d0a531bce5.PNG)
+![registation](https://user-images.githubusercontent.com/59975636/84320687-8053c980-ab8b-11ea-8da1-55dd60560e18.PNG)
+![splash screen](https://user-images.githubusercontent.com/59975636/84320690-80ec6000-ab8b-11ea-9db6-620f86885f8f.PNG)
+![welcome](https://user-images.githubusercontent.com/59975636/84320691-83e75080-ab8b-11ea-9175-c1be5f4eb698.PNG)
