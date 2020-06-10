@@ -1,0 +1,84 @@
+﻿<Window x:Class="CODEHUB.CustomerLogin"   Icon="pic/logo.jpg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CODEHUB"
+        mc:Ignorable="d"
+            xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+              
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        ResizeMode="NoResize" WindowStyle="None" Background="WhiteSmoke" WindowStartupLocation="CenterScreen"
+
+        Title="CustomerLogin" Height="480.337" Width="800">
+    <Grid>
+
+        <StackPanel Background="DarkBlue" Margin="0,0,624,0">
+
+            <TextBox x:Name="textbox1_name" Background="DarkBlue" Foreground="DarkBlue" IsReadOnly="True" BorderBrush="DarkBlue"></TextBox>
+            <TextBox x:Name="textbox1_Email" Background="DarkBlue" Foreground="DarkBlue" IsReadOnly="True" BorderBrush="DarkBlue"/>
+            <PasswordBox x:Name="textbox1_Password" Background="DarkBlue" Foreground="DarkBlue" BorderBrush="DarkBlue"/>
+        </StackPanel>
+        <StackPanel Background="DarkBlue" Margin="131,-2,561,112" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-16.019" AngleY="-0.066"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-65.271" Y="2.332"/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+
+        </StackPanel>
+        <Image gif:ImageBehavior.RepeatBehavior="Forever" gif:ImageBehavior.AnimatedSource="pic/source.gif" Margin="104,-2,587,423" RenderTransformOrigin="0.647,-1.495" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="0.977" ScaleX="-1"/>
+                    <SkewTransform AngleY="-7.845" AngleX="9.616"/>
+                    <RotateTransform Angle="9.187"/>
+                    <TranslateTransform Y="19.503" X="-83.136"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <StackPanel  VerticalAlignment="Bottom"  RenderTransformOrigin="0.5,0.5" Height="452" Margin="-14,0,0,-3">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.354"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <TextBlock FontSize="50" FontStyle="Normal"  Foreground="DarkBlue" TextAlignment="Center" Height="76" Margin="288,0,25,0" FontWeight="Bold" FontFamily="Elephant" RenderTransformOrigin="0.494,0.939" >
+               CODEHUB
+            </TextBlock>
+            <TextBlock FontSize="50" Foreground="DarkBlue" TextAlignment="Center" Height="72" Margin="288,0,25,0" FontWeight="Bold" FontFamily="Algerian" >
+                Customer LOGIN
+
+
+            </TextBlock>
+            <TextBlock  Margin="253,0,0,0" FontSize="20" Foreground="DarkBlue" Height="37">
+             Email
+            </TextBlock>
+            <TextBox x:Name="textbox1" Height="55"  FontSize="15" Foreground="Gray" Margin="253,0,25,0" TextWrapping="Wrap"  materialdesign:HintAssist.Hint="Enter your Email" Background="White"  />
+            <TextBlock  Margin="253,0,0,0" FontSize="20" Foreground="DarkBlue" Height="37">
+               Password
+            </TextBlock>
+            <PasswordBox x:Name="textbox2" PasswordChanged="textbox2_PasswordChanged" Height="55"  FontSize="15" Foreground="Gray" Margin="253,0,25,0"  Background="White"  materialdesign:HintAssist.Hint="Enter your Password"  />
+            <TextBlock></TextBlock>
+
+        </StackPanel>
+        <Button x:Name="Login" FontSize="20" Foreground="DarkBlue" Margin="0,375,222,56" RenderTransformOrigin="0.5,0.5" Content="LOGIN" HorizontalAlignment="Right" Click="Login_Click" Width="200"/>
+
+        <Button  x:Name="Rigiter" FontSize="20" Foreground="DarkBlue" Content="Regiter" Margin="378,424,222,10" Background="White" Click="Rigiter_Click"/>
+        <Button x:Name="Home" Margin="724,0,0,424" Background="White" Click="Home_Click" Height="Auto">
+            <StackPanel>
+                <Image Source="pic/home.jpg" Height="57" Width="44"/>
+
+            </StackPanel>
+        </Button>
+        <Image x:Name="ImgShowHide" Visibility="Visible" Height="41" HorizontalAlignment="Left"  Stretch="Fill" VerticalAlignment="Top" Width="58" Margin="705,310,0,0"
+               MouseLeave="ImgShowHide_MouseLeave" PreviewMouseDown="ImgShowHide_PreviewMouseDown" PreviewMouseUp="ImgShowHide_PreviewMouseUp" />
+        <TextBox Height="48"  FontSize="20" Padding="5,2,47,0" HorizontalAlignment="Left" Margin="240,316,0,0" Name="txtVisiblePasswordbox" VerticalAlignment="Top" Width="273" />
+    </Grid>
+</Window>

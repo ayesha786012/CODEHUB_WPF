@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="CODEHUB.Recommendation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CODEHUB"
+             mc:Ignorable="d" Height="465.169" Width="885.5">
+    <Grid Background="White">
+        <StackPanel Height="80" VerticalAlignment="Top">
+            <Label Content="Recommended Code Examples" BorderBrush="Purple" HorizontalAlignment="Center" FontFamily="Californian FB" FontSize="20" FontWeight="Bold" Foreground="Purple" Background="White" />
+            <TextBlock Height="5" Text="---------------" Background="Purple"/>
+
+            <TextBlock Height="2" Text="---------------" Background="Purple"/>
+            <Button x:Name="Recommend" Background="DarkBlue" Foreground="White" FontSize="25" FontFamily="Californian FB" FontWeight="Bold" Content="Recommend" Click="Recommend_Click" ></Button>
+
+        </StackPanel>
+
+
+
+
+        <Label Margin="362,65,419,367" Content="Language" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="DarkBlue" Width="105"/>
+        <Label Margin="616,65,192,367" Content="Source" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="DarkBlue" Width="78"/>
+        <TextBox x:Name="query" Foreground="DarkBlue" FontSize="20 " FontFamily="Californian FB" BorderBrush="Purple" BorderThickness="1" Margin="10,96,547,319"></TextBox>
+        <TextBox x:Name="language" Foreground="DarkBlue" FontSize="20 " FontFamily="Californian FB" BorderBrush="Purple" BorderThickness="1" Margin="344,96,398,319" RenderTransformOrigin="0.455,0.518"></TextBox>
+        <TextBox x:Name="source" Foreground="DarkBlue" FontSize="20 " FontFamily="Californian FB" BorderBrush="Purple" BorderThickness="1" Margin="493,91,100,319" RenderTransformOrigin="0.22,0.507"></TextBox>
+        <StackPanel Margin="0,151,0,164">
+            <ListBox x:Name="listbox1" BorderBrush="DarkBlue" BorderThickness="5" FontFamily="Californian FB" FontSize="15" FontStyle="Normal" FontWeight="Heavy" Height="150" MouseDoubleClick="listbox1_MouseDoubleClick"></ListBox>
+        </StackPanel>
+        <StackPanel Margin="0,301,0,0">
+            <TextBox x:Name="richtextbox1" BorderBrush="DarkBlue" BorderThickness="5" Foreground="DarkBlue" Height="123"  HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" VerticalAlignment="Center"
+TextWrapping="WrapWithOverflow" TextAlignment="Right"/>
+            <Button x:Name="Download"  Content="Download" Foreground="White" Click="Download_Click" Height="35"/>
+        </StackPanel>
+        <Button x:Name="save" Height="Auto" Margin="805,84,10,319" Click="save_Click" Background="White">
+            <StackPanel>
+                <Image Source="pic/rec.jpg" Height="46" Width="52"/>
+                <TextBlock Text="Search" Height="18" Width="39" FontSize="12" FontWeight="Bold" />
+            </StackPanel>
+        </Button>
+        <Label Height="30" Margin="158,66,658,369" Content="Query" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="DarkBlue" Width="70"/>
+        <Label Margin="819,122,9,315" Content="Saved" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="DarkBlue" Width="58"/>
+
+    </Grid>
+</UserControl>

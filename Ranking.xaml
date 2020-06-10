@@ -1,0 +1,86 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CODEHUB"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="CODEHUB.Ranking"
+             mc:Ignorable="d" 
+             d:DesignHeight="453.469" d:DesignWidth="1125.723">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="34*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Height="107" VerticalAlignment="Top">
+            <Label Content="Rank Your Examples" BorderBrush="Purple" HorizontalAlignment="Center" FontFamily="Californian FB" FontSize="20" FontWeight="Bold" Foreground="Purple" Background="White" />
+            <TextBlock Height="5" Text="---------------" Background="Purple"/>
+            <ComboBox x:Name="comborank1" BorderBrush="Purple" FontSize="10" Foreground="DarkBlue" Height="31"  HorizontalAlignment="Center" Margin="254,0,265,0" Width="281" Background="LightGray" Text="Select Technique" >
+                <ComboBoxItem Content="Context Based Ranking"/>
+                <ComboBoxItem Content="Popularity Based Ranking"/>
+            </ComboBox>
+            <TextBlock Height="2" Text="---------------" Background="Purple"/>
+            <Button x:Name="Rank" Background="DarkBlue" Foreground="White" FontSize="25" FontFamily="Californian FB" FontWeight="Bold" Content="Rank" Click="Rank_Click" ></Button>
+
+        </StackPanel>
+        <StackPanel Margin="0,2,486,0" Grid.Row="1">
+            <ListBox x:Name="listbox1" BorderBrush="DarkBlue" BorderThickness="5" FontFamily="Californian FB" FontSize="15" FontStyle="Normal" FontWeight="Heavy" Height="338" MouseDoubleClick="listbox1_MouseDoubleClick" Margin="0,0,170,0"></ListBox>
+
+        </StackPanel>
+        <StackPanel  Margin="319,10,247,0" Grid.Row="1">
+            <TextBox x:Name="query" Foreground="DarkBlue" IsReadOnly="True" FontSize="10" HorizontalAlignment="Right" Margin="0,0,186,0" RenderTransformOrigin="0.5,0.5" Width="220"/>
+            <TextBox x:Name="source" Foreground="DarkBlue" IsReadOnly="True" FontSize="10" Margin="154,0,186,0"/>
+            <TextBox x:Name="language" Foreground="DarkBlue" IsReadOnly="True" FontSize="10" Margin="156,0,184,0"/>
+
+        </StackPanel>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="251" Margin="468,77,0,0" Grid.Row="1" VerticalAlignment="Top" Width="226"/>
+        <StackPanel x:Name="stackpanel" Margin="320,79,246,6" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <Border BorderThickness="8" BorderBrush="DarkBlue" Height="253" Margin="145,0,184,0" >
+
+                <StackPanel RenderTransformOrigin="0.5,0.5" Margin="0,6,0,-2">
+
+                    <Label Foreground="Purple" FontSize="15 " FontWeight="Bold" FontFamily="Californian FB" Content="Popularity Metrics" HorizontalAlignment="Center"></Label>
+                    <Label HorizontalAlignment="Center" BorderBrush="DarkGreen" BorderThickness="2" Content="Watches" Height="38" FontSize="15" Foreground="Red" Margin="12,0,9,0" Width="194"/>
+
+
+                    <Image Source="pic/watches.png" HorizontalAlignment="Left" Width="64"  Margin="10,0,0,0" Height="46">
+
+                    </Image>
+                    <Label HorizontalAlignment="Center" BorderBrush="DarkGreen" BorderThickness="2" Content="Star" Height="40" FontSize="15" Foreground="Red" Margin="3,0,1,0" Width="196"/>
+                    <Image Source="pic/star.png" Margin="10,0,0,0" RenderTransformOrigin="0.472,1.543" HorizontalAlignment="Left" Width="64" Height="47"/>
+
+                    <StackPanel.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </StackPanel.RenderTransform>
+                </StackPanel>
+
+
+
+            </Border>
+
+
+
+        </StackPanel>
+
+        <TextBox x:Name="textbox1_watches" BorderBrush="DarkBlue" Foreground="Gray" Margin="544,161,450,154" Grid.Row="1"></TextBox>
+        <TextBox x:Name="textbox1_star" BorderBrush="DarkBlue" Foreground="Gray" Margin="548,252,447,48" Grid.Row="1"></TextBox>
+        <StackPanel Margin="691,10,10,0" Grid.Row="1">
+            <TextBox x:Name="richtextbox1" BorderBrush="DarkBlue" BorderThickness="5" Foreground="DarkBlue" Height="285"  Margin="7,0,-8,0" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible"
+TextWrapping="WrapWithOverflow" TextAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5"></TextBox>
+            <Button x:Name="Download"  Content="Download" Foreground="White" Click="Download_Click" Height="45" Margin="4,0,-8,0"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

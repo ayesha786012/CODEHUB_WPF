@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="CODEHUB.History"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CODEHUB"
+             mc:Ignorable="d" 
+               xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes" Width="905.155" Height="494.845">
+    <Grid>
+        <StackPanel Background="White">
+
+            <Label Content="History" HorizontalAlignment="Center" FontSize="35 " FontWeight="ExtraBold" FontStyle="Normal" FontFamily="Californian FB" Foreground="Purple" Background="WhiteSmoke"></Label>
+            <TextBox x:Name="password"  HorizontalAlignment="Center" materialdesign:HintAssist.Hint="Enter your Password" FontSize="20 " FontWeight="Bold" Foreground="DarkBlue"></TextBox>
+            <Button x:Name="enter" FontSize="20 " FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Content="Search" Click="enter_Click"></Button>
+            <TreeView x:Name="treeview1" HorizontalAlignment="Center" FontSize="15" FontFamily="Arial" Foreground="DarkBlue" Height="333" Margin="4,0,5,0" RenderTransformOrigin="0.5,0.5" Width="791">
+
+            </TreeView>
+        </StackPanel>
+    </Grid>
+</UserControl>

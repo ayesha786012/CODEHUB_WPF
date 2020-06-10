@@ -1,0 +1,90 @@
+﻿<Window x:Class="CODEHUB.ADMINFLATE"
+      Icon="pic/logo.jpg" Background="White"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+         xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CODEHUB"
+     
+        Title="MainFlate"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="678.652" Width="1361.079" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" >
+
+    <Grid Background="White" MouseDown="Grid_MouseDown">
+        <StackPanel VerticalAlignment="Top">
+            <Grid Background="DarkBlue" Height="10"/>
+            <Grid Margin="0,5,5,5">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="254,0,254,59">
+                    <TextBlock FontSize="30" FontStyle="Normal"  Foreground="DarkBlue" TextAlignment="Center" Margin="288,0,25,0" FontWeight="Bold" FontFamily="Elephant" RenderTransformOrigin="0.494,0.939" Width="259" >
+               CODEHUB
+                    </TextBlock>
+                </StackPanel>
+               
+                    <TextBlock FontSize="25" FontStyle="Normal" VerticalAlignment="Center" Foreground="DarkBlue" TextAlignment="Center" Margin="570,58,297,7" FontWeight="Bold" FontFamily="Elephant" RenderTransformOrigin="0.494,0.939" Width="489" >
+               ADMINISTRATION PANEL
+                    </TextBlock>
+              
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10 0">
+
+                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="0 0 10 0" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="Power" Height="20" Width="30" RenderTransformOrigin="0.565,-0.509"/>
+                    </Button>
+
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <Grid Margin="250 55 0 0">
+            <Grid x:Name="GridPrincipal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Width="250" HorizontalAlignment="Left" Background="DarkBlue">
+
+            <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+                <Grid x:Name="GridCursor" Margin="-2,122,0,0" Background="#FF0069C0" Width="10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top"/>
+            </materialDesign:TransitioningContent>
+            <ListView  x:Name="ListViewMenu" Margin="2,109,-2,208" Foreground="LightGray" FontFamily="Champagne &amp; Limousines" FontSize="18" SelectionChanged="ListViewMenu_SelectionChanged" SelectedIndex="-1" MouseLeftButtonDown="ListViewMenu_MouseLeftButtonDown"  >
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Book" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Service_Book" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="ChartPie" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Performance" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="History" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="History" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="About" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="About" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="60">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="SignOut" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Text="Signout" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                    </StackPanel>
+                </ListViewItem>
+              
+
+                
+               
+            </ListView>
+
+        </Grid>
+        <Image  gif:ImageBehavior.RepeatBehavior="Forever" gif:ImageBehavior.AnimatedSource="pic/source.gif" Margin="0,0,1081,597" ></Image>
+        <Image Source="pic/download (5).png" Margin="258,6,1029,565"></Image>
+    </Grid>
+
+</Window>

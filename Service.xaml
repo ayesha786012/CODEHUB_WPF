@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="CODEHUB.Service"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CODEHUB"
+             mc:Ignorable="d" d:DesignWidth="978.454" Loaded="UserControl_Loaded" Height="511.649">
+    <UserControl.Resources>
+        <local:SOURCEDataSet x:Key="sOURCEDataSet"/>
+        <CollectionViewSource x:Key="reportViewSource" Source="{Binding Report, Source={StaticResource sOURCEDataSet}}"/>
+
+    </UserControl.Resources>
+    <Grid>
+        <DataGrid x:Name="reportDataGrid" Background="White" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource reportViewSource}}" Margin="5,57,0,1" RowDetailsVisibilityMode="VisibleWhenSelected" CanUserDeleteRows="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="nameColumn" Binding="{Binding Name}" Foreground="DarkBlue"  Header="Name" Width="Auto" />
+                <DataGridTextColumn x:Name="languageColumn" Binding="{Binding Language}" Header="Language" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTextColumn x:Name="queryColumn" Binding="{Binding Query}" Header="Query" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTextColumn x:Name="sourceColumn" Binding="{Binding Source}" Header="Source" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTextColumn x:Name="timeColumn" Binding="{Binding Time}" Header="Time" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTextColumn x:Name="dateColumn" Binding="{Binding Date}" Header="Date" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTextColumn x:Name="searchColumn" Binding="{Binding Search}" Header="Search" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTextColumn x:Name="passwordColumn" Binding="{Binding Password}" Header="Password" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTextColumn x:Name="recommendedColumn" Binding="{Binding Recommended}" Header="Recommended" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTextColumn x:Name="emailColumn" Binding="{Binding Email}" Header="Email" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTextColumn x:Name="remarksColumn" Binding="{Binding Remarks}" Header="Remarks" Foreground="DarkBlue" Width="Auto"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="Delete" Content="Delete" Click="Delete_Click" Command="Delete" Width="Auto"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Background="White" Margin="0,0,0,450">
+            <Label Content="Customer Information" HorizontalAlignment="Center" FontSize="25 " FontWeight="ExtraBold" FontStyle="Normal" FontFamily="Californian FB" Foreground="Purple" Background="WhiteSmoke"></Label>
+
+        </StackPanel>
+    </Grid>
+
+</UserControl>

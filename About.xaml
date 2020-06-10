@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="CODEHUB.About"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CODEHUB"
+             mc:Ignorable="d" 
+                      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+             d:DesignHeight="532.584" Width="1081.46">
+    <Grid Margin="0,0,182,-51">
+        <StackPanel Background="White" Margin="0,0,12,0">
+            <Label Content="______________________________________________________________________________________________________________________________" HorizontalAlignment="Center" FontSize="35 " FontWeight="ExtraBold" FontStyle="Normal" FontFamily="Californian FB" Foreground="Purple" Background="White"></Label>
+            <StackPanel>
+                <RichTextBox Height="358" Margin="15,0,286,0" HorizontalAlignment="Center" BorderBrush="Blue" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Width="586">
+                    <FlowDocument>
+                        <Paragraph FontSize="15" FontFamily="Arial" Foreground="DarkBlue" FontWeight="Bold"  >
+                            ABSTRACT
+                        </Paragraph>
+                        <Paragraph>
+                            With the Explosive growth of the data on World Wide Web, a large amount of  data is available on the Internet. Although today’s software systems are build by the most up-to-date fundamental body which is Source code which is the most reliable data source. It provides a rich and structured source of information, Source code examples are used by developers to implement unfamiliar tasks by learning from existing solutions. To better support developers in finding existing solutions from the large amount of available data of type source code on the internet  their should be a design a code search engines  to locate and rank code examples relevant to user’s queries Although several systems have been designed to automate this procedure by recommending components on the basis of reusability score metrics that cover the desired functionality which  involve ﬁnding reusable software components from online repositories and integrating them to the source code, both to reduce development time and to ensure that the ﬁnal software project is of high quality, but the reusability of these components is usually not assessed by these systems.
+                        </Paragraph>
+                        <Paragraph>
+                            A CODEGO first Allow the users or developers for accessing the system by creating an Account, after Registration of the individual user ,user must Login and Provide a Dashboard interface for writing and Searching for  Query, user query Tokenized and saved onto the database, system then Crawl the data on the bases of query then provides a ranking schema, which combines a set of ranking features to calculate the relevance between a query and  code examples which are extracted from the websites for example(Github,Quora,Stackoverflow).Consequently, the ranking schema places relevant code examples at the top of the result list .  We evaluate the ranking performance of our approach using a corpus of over 360,000 code snippets crawled from 500 Github Repositories and provide recommendations to the Developers
+                        </Paragraph>
+                    </FlowDocument>
+
+                </RichTextBox>
+            </StackPanel>
+            <StackPanel Height="176" Background= "Black">
+
+
+            </StackPanel>
+
+        </StackPanel>
+        <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="277,402,592,152" Click="Button_Click" HorizontalAlignment="Stretch">
+            <materialDesign:PackIcon Kind="Facebook" Height="20" Width="30" RenderTransformOrigin="0.565,-0.509"/>
+        </Button>
+        <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="349,403,520,151" Click="Button_Click">
+            <materialDesign:PackIcon Kind="Twitter" Height="20" Width="30" RenderTransformOrigin="0.565,-0.509"/>
+        </Button>
+        <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="405,403,464,151" Click="Button_Click">
+            <materialDesign:PackIcon Kind="Youtube" Height="20" Width="30" RenderTransformOrigin="0.565,-0.509"/>
+        </Button>
+        <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="461,403,408,151" Click="Button_Click">
+            <materialDesign:PackIcon Kind="Apple" Height="20" Width="30" RenderTransformOrigin="0.565,-0.509"/>
+        </Button>
+        <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="508,405,361,149" Click="Button_Click">
+            <materialDesign:PackIcon Kind="LaptopWindows" Height="20" Width="30" RenderTransformOrigin="0.565,-0.509"/>
+        </Button>
+        <TextBlock Margin="24,489,762,73" Foreground="White" FontSize="15">
+            Project Team:
+
+        </TextBlock>
+        <TextBlock Margin="27,513,722,54" Foreground="White">
+                Ayesha Javed
+
+        </TextBlock>
+        <TextBlock Margin="26,533,778,33" Foreground="White">
+           Ayesha Malik
+
+        </TextBlock>
+        <TextBlock Margin="26,552,773,0" Foreground="White">
+                 
+                                  Mam Nazia Bibi
+        </TextBlock>
+        <TextBlock Margin="270,520,498,43" Foreground="White">
+                030-25137531
+
+
+        </TextBlock>
+        <TextBlock Margin="269,538,457,15" Foreground="White">
+          030-56478863
+
+        </TextBlock>
+        <TextBlock Margin="267,555,528,7" Foreground="White">
+                 
+                                  030-77759633
+        </TextBlock>
+        <TextBlock Margin="266,489,411,60" Foreground="White" FontSize="15">
+            Contact Information:
+
+        </TextBlock>
+        <Image Source="pic/1.PNG" Margin="748,45,10,415"></Image>
+        <Image Source="pic/4.PNG" Margin="605,51,143,412"></Image>
+        <Label Content="CODEHUB Success" Margin="684,18,69,443" FontSize="13" Foreground="Purple"></Label>
+        <Image Source="pic/2.PNG" Margin="605,165,143,210"></Image>
+        <Image Source="pic/3.PNG" Margin="743,165,5,210"></Image>
+        <Image Source="pic/download (6).png" Margin="796,399,17,0"></Image>
+        <Image Source="pic/aaa.PNG" Margin="647,408,112,10"></Image>
+        <Image Source="pic/nazo.PNG" Margin="545,448,252,12"></Image>
+
+    </Grid>
+</UserControl>
